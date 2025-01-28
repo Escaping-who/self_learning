@@ -1,0 +1,17 @@
+---
+title: "learn"
+output: html_document
+date: "2025-01-28"
+---
+
+```{r}
+x = 1
+x
+```
+```{r echo=FALSE}
+x = rnorm(1000)
+y = rnorm(1000)
+plot(x,y)
+```
+$Ca^{2+}$
+\[Ca^{2+}\]
