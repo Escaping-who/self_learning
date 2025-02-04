@@ -1,17 +1,40 @@
 ---
 title: "learn"
-output: html_document
+output:
+  html_document: default
 date: "2025-01-28"
 ---
+```
+包的管理
+install.packages("")
+remove.packages("")
+update.packages("")
+library("car") #加载包
+car::vif #单独调用包中的一个函数
+```
 
-```{r}
-x = 1
-x
 ```
-```{r echo=FALSE}
-x = rnorm(1000)
-y = rnorm(1000)
-plot(x,y)
+获取帮助
+?library #获取函数的用法
+??library #在 Help 窗口中搜索关键词
+help(package = "ggplot2") #获取某个包的帮助文档
 ```
-$Ca^{2+}$
-\[Ca^{2+}\]
+
+```
+项目管理
+getwd() #获取工作目录
+setwd()
+
+file.choose() #获取鼠标选中的文件路径
+save(v1, file = ".RData") #存储环境变量
+save.image()
+load() #加载 R 文件
+
+ls() #列出环境中所有的变量
+rm() #移除特定变量
+rm(list = ls())
+```
+
+
+
+
